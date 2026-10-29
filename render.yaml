@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: global-bp
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server/server.mjs
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 24

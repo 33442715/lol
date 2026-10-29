@@ -1,0 +1,15 @@
+{
+  "name": "lol-global-bp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "League of Legends Fearless Draft / First Selection BP tool with realtime online rooms",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "serve:static": "node tools/serve.mjs",
+    "test": "node tests/core.test.js",
+    "test:online": "node tests/online.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
